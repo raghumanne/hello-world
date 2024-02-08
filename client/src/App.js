@@ -1,4 +1,5 @@
 import React, {useState, useEffect } from 'react'
+import Register from './register'
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
   return (
     <div>
           {(typeof data.members === 'undefined') ? (
-              <p>Loading...</p>
+              <Register />
           ) : ( 
                data.members.map((member, i) => (
                    <p key={i}>{member}</p>
